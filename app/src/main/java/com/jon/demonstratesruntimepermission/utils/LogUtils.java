@@ -20,19 +20,10 @@ public class LogUtils {
 
 	public static final void LogDebug(String logText) {
 
-		StackTraceElement[] stackTrace = Thread.currentThread()
-		                                       .getStackTrace();
-		if (stackTrace != null && stackTrace.length > 4) {
+		// Full logging method used in class is available -
+		// https://gist.github.com/dors/4651b8ecff2f76c012ae
+		// Give a STAR to the developer :)
 
-			StackTraceElement element = stackTrace[4];
-			String fullClassName = element.getClassName();
-			String className = fullClassName.substring(fullClassName.lastIndexOf(".") + 1); // no package
-
-			//add class and method data to logText
-			logText = "T:" + Thread.currentThread()
-			                       .getId() + " | " + className + " , " + element.getMethodName() +
-					"() | " + logText;
-		}
 		Log.d(TAG, logText);
 	}
 }
