@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">Permission</string>
+
+    <!-- Options Menu -->
+    <string name="action_settings">Settings</string>
+
+    <!-- Main Activity -->
+    <string name="mainActivity_locationTV_default">No location available</string>
+    <string name="mainActivity_locationTVFormat">Longitude {0} Latitude {1}</string>
+    <string name="mainActivity_locationTV_errorMessage">Could not retrieve location</string>
+
+    <!-- Common Strings -->
+    <string name="permission_denied">PERMISSION - denied</string>
+
+</resources>
